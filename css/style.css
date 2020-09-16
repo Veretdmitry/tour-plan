@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+  width: 95%;
   max-width: 1110px;
   margin: auto;
 }
@@ -400,7 +401,7 @@ template {
   padding-right: 75px;
 }
 
-.search__input:hover {
+.search__input:focus {
   outline: none;
 }
 
@@ -412,6 +413,10 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+}
+
+.search__button:focus {
+  outline: none;
 }
 
 .user {
