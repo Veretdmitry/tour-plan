@@ -519,7 +519,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 640px;
   }
   .navbar-menu, .navbar__search, .navbar__user {
     display: none;
