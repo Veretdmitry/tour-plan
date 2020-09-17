@@ -1,13 +1,31 @@
-.header
-  background-color: #fff
+.navbar
+  background-color: #000
   &-top
-    display: flex
-    align-items: center
-    justify-content: space-between
-    padding: 40px 0
+    background-color: #fff
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 40px 0
   &__search
     margin-left: 108px
     margin-right: auto
+  &-bottom
+    background-color: #0A223D
+  &-menu
+    display: flex
+    justify-content: space-between
+    padding-left: 0
+    list-style: none
+    padding: 31px 0
+    margin: 0
+    &__link
+      font-size: 14px
+      font-weight: 700
+      line-height: 18px 
+      text-transform: uppercase
+      text-decoration: none
+      color: #fff
 
 .search
   height: 40px      
@@ -38,6 +56,7 @@
     &:focus
       outline: none
 
+
 .user
   display: flex
   align-items: center
@@ -52,3 +71,6 @@
     ine-height: 18px
     color: $text-color
     margin-left: 18px
+
+
+    

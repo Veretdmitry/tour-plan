@@ -357,11 +357,15 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
+  background-color: #000;
+}
+
+.navbar-top {
   background-color: #fff;
 }
 
-.header-top {
+.navbar-top-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,9 +378,35 @@ template {
   padding: 40px 0;
 }
 
-.header__search {
+.navbar__search {
   margin-left: 108px;
   margin-right: auto;
+}
+
+.navbar-bottom {
+  background-color: #0A223D;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+  padding: 31px 0;
+  margin: 0;
+}
+
+.navbar-menu__link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
 }
 
 .search {
