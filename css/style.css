@@ -514,6 +514,7 @@ template {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
   color: inherit;
   margin: 0;
   margin-top: 4px;
@@ -568,13 +569,13 @@ template {
   line-height: 18px;
 }
 
-.hotel .stars {
+.stars {
   flex-basis: 100%;
   padding: 0;
   margin: 0;
 }
 
-.hotel .stars__item:not(:last-child) {
+.stars__item:not(:last-child) {
   margin-right: 2px;
 }
 
@@ -628,6 +629,30 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .hotel-left {
+    flex-basis: 100%;
+  }
+  .hotel-left__info {
+    justify-content: space-between;
+  }
+  .hotel-left__offer {
+    order: -1;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .hotel-left__name {
+    margin-top: 10px;
+  }
+  .hotel-left__text {
+    margin-top: 5px;
+  }
+  .hotel-right {
+    display: none;
+  }
+  .stars {
+    text-align: right;
+    flex-basis: 50%;
   }
 }
 
