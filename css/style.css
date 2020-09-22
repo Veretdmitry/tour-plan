@@ -495,6 +495,7 @@ template {
 
 .hotel {
   background-color: #f5fafe;
+  padding-bottom: 72px;
 }
 
 .hotel-wrapper {
@@ -502,6 +503,7 @@ template {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 .hotel-left__info {
@@ -577,6 +579,66 @@ template {
 
 .stars__item:not(:last-child) {
   margin-right: 2px;
+}
+
+.swiper {
+  position: relative;
+  width: 728px;
+  height: 450px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  max-width: 728px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.swiper-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.swiper-button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.swiper-button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+}
+
+.swiper-button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.swiper-button:focus {
+  outline: none;
 }
 
 @media (max-width: 1200px) {
