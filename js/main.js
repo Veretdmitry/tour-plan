@@ -19,17 +19,12 @@ var mySwiper = new Swiper('.swiper-container', {
 ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map("map", {
-    center: [-8.825719, 115.218629],
+    center: [52.351250, 4.872511],
     zoom: 7
   });
-  myMap.geoObjects.add(new ymaps.Placemark([-8.825719, 115.218629], {
-    balloonContent: '<strong>Hilton Bali Resort</strong>'
+  myMap.geoObjects.add(new ymaps.Placemark([52.351250, 4.872511], {
+    balloonContent: '<strong>Hilton Amsterdam</strong>'
   }))
-  myMap.geoObjects.add(myPlacemark);
 
-  // Открываем балун на карте (без привязки к геообъекту).
-  myMap.balloon.open([-8.825719, 115.218629], "Hilton Bali Resort", {
-    // Опция: не показываем кнопку закрытия.
-    closeButton: true
-  });
+
 }
