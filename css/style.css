@@ -495,7 +495,7 @@ template {
 
 .hotel {
   background-color: #f5fafe;
-  padding-bottom: 72px;
+  padding-bottom: 70px;
 }
 
 .hotel-wrapper {
@@ -855,6 +855,9 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-wrapper {
     padding: 5px 0 20px 0;
   }
@@ -876,7 +879,7 @@ template {
     display: none;
   }
   .hotel-grid {
-    padding: 18px 0 40px 0;
+    padding-top: 18px;
   }
   .hotel-booking {
     flex-direction: column;
@@ -903,6 +906,9 @@ template {
   }
   .swiper {
     height: 250px;
+  }
+  .hotel {
+    margin-bottom: 40px;
   }
   .hotel__swiper {
     margin-bottom: 20px;
