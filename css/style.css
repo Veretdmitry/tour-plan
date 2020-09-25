@@ -876,6 +876,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 70px;
 }
 
@@ -884,7 +885,8 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 730px;
+  max-width: 730px;
+  min-height: 280px;
   background-color: #ffffff;
   border-radius: 8px;
   margin: 45px auto 0 auto;
@@ -961,7 +963,7 @@ template {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .review-slider__button {
@@ -1048,6 +1050,9 @@ template {
   }
   .subscribe-block {
     max-width: inherit;
+  }
+  .review-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1142,6 +1147,36 @@ template {
   .subscribe-search__input {
     max-width: 280px;
     padding-left: 20px;
+  }
+  .review {
+    padding: 40px 0 50px;
+  }
+  .review-slider__item {
+    padding: 0 30px 30px;
+  }
+  .review-slider__item::before {
+    display: none;
+  }
+  .review-slider__item::after {
+    display: none;
+  }
+  .review-slider__button {
+    top: 30px;
+  }
+  .review-slider__button--prev {
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-left: -65px;
+  }
+  .review-slider__button--next {
+    right: 50%;
+    transform: translate(50%, 0);
+    margin-right: -65px;
+  }
+  .review__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
   }
 }
 

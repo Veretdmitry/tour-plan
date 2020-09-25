@@ -14,7 +14,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
   autoplay: {
     delay: 5000,
   },
-})
+});
 var reviewSlider = new Swiper('.review-slider', {
   // Optional parameters
   loop: true,
@@ -28,7 +28,10 @@ var reviewSlider = new Swiper('.review-slider', {
     enabled: true,
     onlyInViewport: false,
   },
-})
+  autoplay: {
+    delay: 5000,
+  },
+});
 
 
 ymaps.ready(init);
@@ -40,6 +43,6 @@ function init() {
   myMap.geoObjects.add(new ymaps.Placemark([52.351250, 4.872511], {
     balloonContent: '<strong>Hilton Amsterdam</strong>'
   }))
-}
+};
 
 $('.subscribe').parallax({ imageSrc: '../img/subscribe-bg.jpg' });
