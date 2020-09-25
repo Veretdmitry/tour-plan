@@ -16,16 +16,16 @@
         <div class="container">
           <div class="navbar-top-wrapper">
             <a href="#" class="logo">
-              <img class="logo__image" src="img/horizontal-logo.svg" alt="logo: beast tour plan">
+              <img class="logo__image" src="img/header/horizontal-logo.svg" alt="logo: beast tour plan">
             </a>
             <form action="#" class="search navbar__search">
               <input type="text" class="search__input" placeholder="Search Location">
               <button class="search__button">
-                <img src="img/search.svg" alt="icon: search">
+                <img src="img/header/search.svg" alt="icon: search">
               </button>
             </form>
             <a href="#" class="user navbar__user">
-              <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+              <img src="img/header/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
               <span class="user__name">Nathan</span>
             </a>
             <!-- /.user -->
@@ -81,11 +81,11 @@
           <div class="hotel-left">
             <div class="hotel-left__info">
               <div class="stars">
-                <img src="img/star.svg" alt="Star" class="stars__item">
-                <img src="img/star.svg" alt="Star" class="stars__item">
-                <img src="img/star.svg" alt="Star" class="stars__item">
-                <img src="img/star.svg" alt="Star" class="stars__item">
-                <img src="img/star.svg" alt="Star" class="stars__item">
+                <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                <img src="img/hotel/star.svg" alt="Star" class="stars__item">
               </div>
               <h2 class="hotel-left__name">Grand Hilton Hotel</h2>
               <span class="hotel-left__offer">Flash Offer</span>
@@ -100,33 +100,31 @@
           <!-- /.hotel-right -->
           </div>
           <div class="hotel-grid">
-            <div class="swiper hotel__swiper">
-              <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__image" src="img/slide1.jpg" alt="slide1">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__image" src="img/slide2.jpg" alt="slide2">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__image" src="img/slide3.jpg" alt="slide3">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__image" src="img/slide4.jpg" alt="slide4">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__image" src="img/slide5.jpg" alt="slide5">
-                  </div>
+            <div class="swiper-container hotel-slider hotel__slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide1.jpg" alt="slide1">
                 </div>
-                <!-- If we need navigation buttons -->
-                <button class="swiper-button swiper-button--prev"></button>
-                <button class="swiper-button swiper-button--next"></button>
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide2.jpg" alt="slide2">
+                </div>
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide3.jpg" alt="slide3">
+                </div>
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide4.jpg" alt="slide4">
+                </div>
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide5.jpg" alt="slide5">
+                </div>
               </div>
-              <!-- /.swiper-container button-->
+              <!-- If we need navigation buttons -->
+              <button class="hotel-slider__button hotel-slider__button--prev"></button>
+              <button class="hotel-slider__button hotel-slider__button--next"></button>
             </div>
+              <!-- /.hotel-slider> -->
             <div class="hotel-booking">
               <div class="booking">
                 <div class="booking-info">
@@ -137,11 +135,11 @@
                   </div>
                   <div class="booking-room">
                     <a href="#" class="booking-room__link">
-                      <img src="img/user.svg" alt="icon:user">
+                      <img src="img/hotel/user.svg" alt="icon:user">
                       2 x Guests
                     </a>
                     <a href="#" class="booking-room__link">
-                      <img src="img/home.svg" alt="icon:user">
+                      <img src="img/hotel/home.svg" alt="icon:user">
                       1 x Room
                     </a>
                   </div>
@@ -150,7 +148,7 @@
                   <span class="booking-call__text">Quick Booking</span>
                   <a href="tell:12100" class="booking-call__link">
                     <img 
-                      src="img/phone.svg" 
+                      src="img/hotel/phone.svg" 
                       alt="icon:phone" 
                       class="booking-call__phone"
                     >
@@ -168,7 +166,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <section class="subscribe">
+    <section class="subscribe" data-parallax="scroll" data-image-src="img/subscribe-bg.jpg">
       <div class="container">
         <div class="subscribe-block">
           <div class="subscribe-text">
@@ -185,7 +183,103 @@
       </div>
     </section>
     <!-- /.subscribe -->
+    <section class="review">
+      <div class="container">
+        <!-- Slider main container -->
+        <h2 class="review__title">What people thinks about us</h2>
+        <div class="swiper-container review-slider review__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="review-slider__item">
+                <div class="review-slider__profile">
+                  <img 
+                    class="review-slider__avatar"
+                    src="img/review/reviews-avatars/review-avatar1.jpg"
+                    alt="review-avatar:1"
+                  >
+                  <h3 class="review-slider__username">Megan Fox</h3>
+                  <span class="review-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="review-slider__rating">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                  </div>
+                  <!-- /.review-slider__rating -->
+                </div>
+                <!-- .review-slider__profile -->
+                <p class="review-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
+                  were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+                  was a good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.review-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="review-slider__item">
+                <div class="review-slider__profile">
+                  <img class="review-slider__avatar" src="img/review/reviews-avatars/review-avatar2.jpg" alt="review-avatar:2">
+                  <h3 class="review-slider__username">Katherine James</h3>
+                  <span class="review-slider__date">Stayed 10 Sep, 2017</span>
+                  <div class="review-slider__rating">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                  </div>
+                  <!-- /.review-slider__rating -->
+                </div>
+                <!-- .review-slider__profile -->
+                <p class="review-slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quibusdam sed aperiam cum, optio, id nisi magnam quis exercitationem aut harum maiores fuga adipisci architecto veniam voluptatibus. Aspernatur, illo veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione obcaecati perferendis est architecto repellendus, esse velit debitis doloribus aliquid inventore, nemo quo dolorem atque. Debitis ipsa tempora doloremque numquam dicta!
+                </p>
+              </div>
+              <!-- /.review-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="review-slider__item">
+                <div class="review-slider__profile">
+                  <img class="review-slider__avatar" src="img/review/reviews-avatars/review-avatar3.jpg" alt="review-avatar:3">
+                  <h3 class="review-slider__username">Lee Ho</h3>
+                  <span class="review-slider__date">Stayed 25 Dec, 2018</span>
+                  <div class="review-slider__rating">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                    <img src="img/hotel/star.svg" alt="Star" class="stars__item">
+                  </div>
+                  <!-- /.review-slider__rating -->
+                </div>
+                <!-- .review-slider__profile -->
+                <p class="review-slider__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur voluptates aperiam incidunt quia inventore accusamus voluptatem sequi accusantium laborum illum, ea magnam blanditiis deserunt, necessitatibus temporibus deleniti nobis alias?
+                </p>
+              </div>
+              <!-- /.review-slider__item -->
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="review-slider__button review-slider__button--prev"></button>
+          <button class="review-slider__button review-slider__button--next"></button>
+        </div>
+        <!-- /.review-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.review -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
   </body>
   </html>
