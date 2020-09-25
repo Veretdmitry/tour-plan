@@ -1,0 +1,71 @@
+.subscribe
+  position: relative
+  background-image: url(../img/subscribe-bg.jpg)
+  background-position: center
+  background-size: cover
+  padding: 98px 0 87px 0
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 1
+    background: rgba(10, 34, 61, 0.8)
+  &-block
+    position: relative
+    z-index: 2
+    max-width: 731px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $light
+  &__text
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
+    margin: 0
+  &__title
+    font-style: normal
+    font-weight: 600
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+  &-search
+    position: relative
+    height: 55px
+    overflow: hidden
+    border-radius: 4px
+    &__input
+      height: 100%
+      max-width: 350px
+      padding: 19px 75px 18px 33px
+      background: $light
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 18px
+      border: none
+      &:focus
+        outline: none
+    &__button
+      position: absolute
+      top: 0
+      right: 0
+      height: 100%
+      width: 65px
+      border: none
+      background-color: $primary
+      &:focus
+        outline: none
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $light
+
+      
+
