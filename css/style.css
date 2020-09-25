@@ -779,6 +779,7 @@ template {
 .subscribe {
   position: relative;
   background-color: transparent;
+  min-height: 100px;
   background-position: center;
   background-size: cover;
   padding: 98px 0 87px 0;

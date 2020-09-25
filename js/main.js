@@ -45,4 +45,10 @@ function init() {
   }))
 };
 
-$('.subscribe').parallax({ imageSrc: '../img/subscribe-bg.jpg' });
+$('.subscribe').parallax({ 
+  imageSrc: 'img/subscribe-bg.jpg',
+  speed: 0.2,
+
+
+
+});
