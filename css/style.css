@@ -989,12 +989,12 @@ template {
 
 .review-slider__button--prev {
   background-image: url(../img/review/arrow-left1.svg);
-  left: 0;
+  left: 10px;
 }
 
 .review-slider__button--next {
   background-image: url(../img/review/arrow-right1.svg);
-  right: 0;
+  right: 10px;
 }
 
 .review-slider__button:focus {
