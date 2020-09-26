@@ -642,8 +642,13 @@ template {
 
 .stars {
   flex-basis: 100%;
-  padding: 0;
-  margin: 0;
+  display: flex;
+}
+
+.stars__item {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
 }
 
 .stars__item:not(:last-child) {
@@ -832,7 +837,7 @@ template {
 
 .subscribe-search__input {
   height: 100%;
-  max-width: 350px;
+  width: 350px;
   padding: 19px 75px 18px 33px;
   background: #ffffff;
   font-style: normal;
@@ -1140,6 +1145,9 @@ template {
   .subscribe-block {
     max-width: inherit;
   }
+  .review__title {
+    font-size: 30px;
+  }
   .review-slider__item {
     max-width: 580px;
   }
@@ -1221,7 +1229,7 @@ template {
     width: 100%;
   }
   .stars {
-    text-align: right;
+    justify-content: flex-end;
     flex-basis: 50%;
   }
   .subscribe {
@@ -1247,7 +1255,7 @@ template {
     margin-bottom: 37px;
   }
   .subscribe-search__input {
-    max-width: 280px;
+    width: 280px;
     padding-left: 20px;
   }
   .review {
@@ -1268,12 +1276,12 @@ template {
   .review-slider__button--prev {
     left: 50%;
     transform: translate(-50%, 0);
-    margin-left: -65px;
+    margin-left: -90px;
   }
   .review-slider__button--next {
     right: 50%;
     transform: translate(50%, 0);
-    margin-right: -65px;
+    margin-right: -90px;
   }
   .review__title {
     font-size: 18px;
@@ -1282,6 +1290,7 @@ template {
   }
   .card {
     width: 49%;
+    height: 255px;
   }
 }
 
@@ -1314,6 +1323,10 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .review__title {
+    max-width: 245px;
+    margin: 0 auto 42px;
   }
 }
 
