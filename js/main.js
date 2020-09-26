@@ -49,6 +49,4 @@ $('.subscribe').parallax({
   imageSrc: 'img/subscribe-bg.jpg',
   speed: 0.2,
 
-
-
 });
