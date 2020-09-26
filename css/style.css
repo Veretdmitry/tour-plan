@@ -785,6 +785,7 @@ template {
   position: relative;
   background-color: transparent;
   min-height: 100px;
+  background-image: url(../img/subscribe-bg.jpg);
   background-position: center;
   background-size: cover;
   padding: 98px 0 87px 0;
@@ -976,7 +977,7 @@ template {
   position: absolute;
   z-index: 5;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-100%);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -989,12 +990,12 @@ template {
 
 .review-slider__button--prev {
   background-image: url(../img/review/arrow-left1.svg);
-  left: 10px;
+  left: 15px;
 }
 
 .review-slider__button--next {
   background-image: url(../img/review/arrow-right1.svg);
-  right: 10px;
+  right: 15px;
 }
 
 .review-slider__button:focus {
@@ -1147,6 +1148,7 @@ template {
   }
   .review__title {
     font-size: 30px;
+    margin-bottom: 50px;
   }
   .review-slider__item {
     max-width: 580px;
