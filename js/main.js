@@ -28,7 +28,9 @@ var reviewSlider = new Swiper('.review-slider', {
     enabled: true,
     onlyInViewport: false,
   },
-
+  autoplay: {
+    delay: 5000,
+  },
 });
 
 
