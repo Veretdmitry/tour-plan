@@ -1388,6 +1388,9 @@ template {
     width: 339px;
     height: 250px;
   }
+  .packages__title {
+    margin-bottom: 40px;
+  }
   .packages-wrapper {
     grid-template: repeat(3, 450px)/repeat(2, 1fr);
     column-gap: 20px;
@@ -1524,6 +1527,13 @@ template {
     width: 49%;
     height: 255px;
   }
+  .packages {
+    padding: 30px 0 50px;
+  }
+  .packages__title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
   .packages-hotel__text {
     font-size: 12px;
   }
@@ -1602,7 +1612,7 @@ template {
     margin-top: auto;
   }
   .packages-big__image {
-    height: 50%;
+    max-height: 50%;
     max-width: 100%;
     object-fit: cover;
   }

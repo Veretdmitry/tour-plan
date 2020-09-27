@@ -64,6 +64,8 @@
     width: 339px 
     height: 250px
   .packages
+    &__title
+      margin-bottom: 40px
     &-wrapper
       grid-template: repeat(3, 450px) / repeat(2, 1fr) 
       column-gap: 20px
@@ -171,6 +173,10 @@
     width: 49%
     height: 255px  
   .packages
+    padding: 30px 0 50px
+    &__title
+      font-size: 25px
+      margin-bottom: 25px
     &-hotel
       &__text
         font-size: 12px
@@ -234,7 +240,7 @@
         margin-bottom: 24px
         margin-top: auto
       &__image
-        height: 50%
+        max-height: 50%
         max-width: 100%
         object-fit: cover
       &__name
