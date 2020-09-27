@@ -7,6 +7,10 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-big
+      &__image
+        max-width: 50%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -59,6 +63,14 @@
   .card
     width: 339px 
     height: 250px
+  .packages
+    &-wrapper
+      grid-template: repeat(3, 450px) / repeat(2, 1fr) 
+      column-gap: 20px
+      row-gap: 20px
+    &-small
+      &__info
+        padding: 20px 23px
 @media (max-width: 768px)
   .container 
     max-width: 560px
@@ -158,7 +170,15 @@
   .card
     width: 49%
     height: 255px  
-
+  .packages
+    &-hotel
+      &__text
+        font-size: 12px
+    &-big
+      &__info
+        padding: 25px 30px
+      &__room
+        margin-bottom: 30px
 
 @media  (max-width: 576px)
   .logo
@@ -185,6 +205,49 @@
     &__title
       max-width: 245px
       margin: 0 auto 42px
+  .packages
+    &-wrapper
+      grid-template: repeat(5, 450px) / 1fr
+      column-gap: 0px
+    &-big
+      grid-column: 1/2
+      position: relative
+      display: flex
+      flex-direction: column
+      border-radius: 8px
+      overflow: hidden
+      &__offer
+        position: absolute
+        left: 0
+        top: 26px
+        font-style: normal
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+        color: $light
+        background-color: $primary
+        padding: 4px 9px
+        border-radius: 0px 4px 4px 0px
+      &__info
+        padding: 20px 23px
+      &__room
+        margin-bottom: 24px
+        margin-top: auto
+      &__image
+        height: 50%
+        max-width: 100%
+        object-fit: cover
+      &__name
+        margin: 0
+    &-hotel
+      &__text
+        display: none
+      &__name
+        font-size: 22px
+    &-stars
+      display: none
+    &__button
+      padding: 10px 40px
 @media (max-width: 400px)
   .container
     max-width: 280px
@@ -199,3 +262,6 @@
     min-height: 172px
   .stars
     margin-right: 16px
+  .packages
+    &__button
+      padding: 10px 20px
