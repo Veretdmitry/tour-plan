@@ -1589,6 +1589,7 @@ template {
     grid-row-gap: 40px;
   }
   .footer__logo {
+    width: 104px;
     grid-row: 1/2;
     grid-column: span 2;
   }
@@ -1854,7 +1855,13 @@ template {
     padding: 69px 0 21px 0;
   }
   .footer-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(250px, 1fr);
+  }
+  .footer__ul {
+    max-width: 250px;
+  }
+  .footer__text {
+    max-width: 250px;
   }
   .footer__logo {
     grid-row: 1;
@@ -1908,6 +1915,9 @@ template {
   }
   .footer-bottom__services {
     position: static;
+  }
+  .footer__icon-wrapper {
+    min-width: 30px;
   }
   .footer__social-network {
     flex-direction: column;
