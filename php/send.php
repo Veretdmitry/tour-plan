@@ -23,6 +23,7 @@ $newvisiter_body = "
 <h2>Новый пользователь!</h2>
 <b>Email:</b> $email<br>
 ";
+
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -41,7 +42,14 @@ try {
     $mail->setFrom('dveretcompany@gmail.com', 'Дмитрий Веретельников'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('digrod777@gmail.com');  
+    if(isset($email)) {
+        if($email!='digrod777@gmail.com'){
+            $mail->addAddress('digrod777@gmail.com'); 
+            $mail->addAddress($email);              
+        }              
+    }
+    else $mail->addAddress('digrod777@gmail.com'); 
+ 
 
 
 // Отправка сообщения
