@@ -4,25 +4,26 @@
   padding: 108px 0 46px
   &-wrapper
     display: grid
-    grid-template-columns: 220px repeat(3, minmax(min-content , 1fr))
-    grid-auto-rows: minmax(83px , min-content)
-    gap: 20px
+    grid-template-columns: 1.5fr 1.4fr 1.65fr 1fr 
+    grid-auto-rows: minmax(54px,min-content)
+    row-gap: 24px
     align-items: start
   &__logo
     grid-row: 1 / 3
     width: 166px
-    align-self: center
+    align-self: flex-start
+    margin-top: 31px
   &__title
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
-    margin: 0 0 16px 0
+    margin: 0 0 25px 0
     &--network
       margin: 0 43px 0 0
     &--mb-3
-      margin-bottom: 30px
+      margin-bottom: 34px
   &__ul
     padding: 0
     margin: 0
@@ -36,7 +37,11 @@
     line-height: 160%
     color: $footer-text-color
     &--mb-2
-      margin-bottom: 26px
+      margin-bottom: 22px
+  &-network
+    &__icon
+      width: 21px
+      height: 21px
   &__icon
      &-wrapper
        min-width: 40px
@@ -50,7 +55,7 @@
     &-network
       grid-column: 3/5
       display: flex
-      align-content: center
+      align-items: center
       grid-row: 2 / 4
     &-links
       display: flex
@@ -67,6 +72,10 @@
     justify-content: space-between
     flex-wrap: wrap
   &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
     color: $footer-text-color
     margin: 0
     margin-bottom: 22px
@@ -80,9 +89,11 @@
     border: none
     padding: 0  23px 0 23px  
     height: 50px
-    flex-basis: 48% 
+    flex-basis: 47% 
     margin-bottom: 15px 
   &__message
+    max-width: 539px
+    min-height: 123px
     font-style: normal
     font-weight: normal
     font-size: 12px
@@ -93,7 +104,7 @@
     border: none
     padding: 18px 23px
     flex-basis: 100%
-    margin-bottom: 23px
+    margin-bottom: 24px
   &__button
     min-width: 160px
     min-height: 50px
