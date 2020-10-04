@@ -24,6 +24,14 @@ $newvisiter_body = "
 <b>Email:</b> $email<br>
 ";
 
+$all_title="Новый пользователь обратился за Booking";
+$all_body="
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Email:</b> $email<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$text
+";
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -54,14 +62,20 @@ try {
 
 // Отправка сообщения
 $mail->isHTML(true);
-if(isset($name)) {
-    $mail->Subject = $sendus_title;
-    $mail->Body = $sendus_body;   
-}
-else {
-    $mail->Subject = $newvisiter_title;
-    $mail->Body = $newvisiter_body;
-}
+if (isset($name)&&isset($email)) {
+    $mail->Subject = $all_title;
+    $mail->Body = $all_body;
+} else { 
+    if(isset($name)) {
+        $mail->Subject = $sendus_title;
+        $mail->Body = $sendus_body;   
+    }
+    else {
+        $mail->Subject = $newvisiter_title;
+        $mail->Body = $newvisiter_body;
+    }
+};
+
 
 
  

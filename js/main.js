@@ -39,7 +39,7 @@ menuButton.addEventListener("click", function(){
 });
 
 var modalButton = $(".booking__button");
-var closeButton = $(".modal__close")
+var closeButton = $(".modal__close");
 
 modalButton.on('click', modalopen);
 closeButton.on('click', modalclose);
@@ -59,3 +59,9 @@ function modalclose(event) {
   $(".modal__overlay").removeClass("modal__overlay--visible");
   $(".modal__dialog").removeClass("modal__dialog--visible");
 }
+
+var comeBack = $('.come-back');
+comeBack.on('click', function() {
+  
+  location.href='index.html';
+});
