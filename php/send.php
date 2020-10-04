@@ -52,12 +52,10 @@ try {
     // Получатель письма
     if(isset($email)) {
         if($email!='digrod777@gmail.com'){
-            $mail->addAddress('digrod777@gmail.com'); 
-            $mail->addAddress($email);              
+            $mail->addAddress('digrod777@gmail.com');
+            if(!isset($name))   $mail->addAddress($email); 
         }              
-    }
-    else $mail->addAddress('digrod777@gmail.com'); 
- 
+    } else $mail->addAddress('digrod777@gmail.com');
 
 
 // Отправка сообщения
