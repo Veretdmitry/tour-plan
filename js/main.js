@@ -34,8 +34,27 @@ var reviewSlider = new Swiper('.review-slider', {
 });
 
 var menuButton = document.querySelector('.menu-button');
-menuButton.addEventListener('click', function(){
+menuButton.addEventListener("click", function(){
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom-visible');
 });
 
+var modalButton = $(".booking__button");
+var closeButton = $(".modal__close")
 
+modalButton.on('click', modalopen);
+closeButton.on('click', modalclose);
+$(document).on('keydown', function (e) {
+  if (e.keyCode == 27)
+    modalclose();
+});
+
+
+function modalopen(event) {
+  event.preventDefault();
+  $(".modal__overlay").addClass("modal__overlay--visible");
+  $(".modal__dialog").addClass("modal__dialog--visible");
+}
+function modalclose() {
+  $(".modal__overlay").removeClass("modal__overlay--visible");
+  $(".modal__dialog").removeClass("modal__dialog--visible");
+}
