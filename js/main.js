@@ -55,13 +55,12 @@ function modalopen(event) {
   $(".modal__dialog").addClass("modal__dialog--visible");
 }
 function modalclose(event) {
-  event.preventDefault();
+  if($(this).hasClass('modal__close')) event.preventDefault();
   $(".modal__overlay").removeClass("modal__overlay--visible");
   $(".modal__dialog").removeClass("modal__dialog--visible");
 }
 
 var comeBack = $('.come-back');
-comeBack.on('click', function() {
-  
+comeBack.on('click', function() { 
   location.href='index.html';
 });
