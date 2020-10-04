@@ -54,7 +54,8 @@ function modalopen(event) {
   $(".modal__overlay").addClass("modal__overlay--visible");
   $(".modal__dialog").addClass("modal__dialog--visible");
 }
-function modalclose() {
+function modalclose(event) {
+  event.preventDefault();
   $(".modal__overlay").removeClass("modal__overlay--visible");
   $(".modal__dialog").removeClass("modal__dialog--visible");
 }
