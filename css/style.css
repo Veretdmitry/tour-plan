@@ -1836,7 +1836,7 @@ template {
   .search__input {
     max-width: 245px;
   }
-  .breadcrumbs {
+  .breadcrumbs, .thankyou-block {
     margin-top: 70px;
   }
   .user__name--light {
