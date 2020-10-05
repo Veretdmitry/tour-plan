@@ -2209,8 +2209,12 @@ template {
     margin-bottom: 15px;
   }
   .modal__dialog {
-    padding: 20px 50px;
+    padding: 20px 40px;
     max-width: 350px;
+  }
+  .modal__close {
+    top: 10px;
+    right: 10px;
   }
 }
 
