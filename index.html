@@ -385,6 +385,7 @@
               class="subscribe-search__input" 
               placeholder="Your email address"
               name="email"
+              required
             >
             <button class="subscribe-search__button">
               Send
@@ -632,12 +633,14 @@
                 class="input footer__input"
                 placeholder="Your Full Name*"
                 name="name"
+                required
               >
               <input 
                 type="text" 
                 class="input footer__input" 
                 placeholder="Phone Number*"
                 name="phone"
+                required
               >
               <textarea 
                 class="message footer__message"  
@@ -671,8 +674,9 @@
         </a>
         <h3 class="modal__title">Booking</h3>
         <form action="php/send.php" method="POST" class="modal__form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone"><input type="text" class="input modal__input" placeholder="Email*" name="email">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+          <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <button class="modal__button" type="submit">Send</button>
           <span class="info">* Required Fields</span>
