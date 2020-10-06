@@ -73,6 +73,10 @@ $(function () {
           required: true,
           minlength: 2
         },
+        phone: {
+          required: true,
+          minlength: 17
+        },
         email: {
           required: true,
           email: true
@@ -88,8 +92,10 @@ $(function () {
         },
         phone: {
           required: "-Please, specify your number",
+          minlength: "Please, enter all numbers of phone  "
         }
       }
     });
-  })
+  });
+  $('.phone').mask('+7(000) 000-00-00');
 });
