@@ -66,29 +66,30 @@ $(function () {
     location.href = 'index.html';
   });
   
-  $(".form").validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 2
+  $(".form").each(function() {
+    $(this).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        email: {
+          required: true,
+          email: true
+        }
       },
-      email: {
-        required: true,
-        email: true
+      messages: {
+        name: {
+          required: "-Please, specify your name",
+          minlength: "-Your name must have at least 2 letters "
+        },
+        email: {
+          required: "-Please, enter your email",
+        },
+        phone: {
+          required: "-Please, specify your number",
+        }
       }
-  },
-    messages: {
-      name: {
-        required: "-Please, specify your name",
-        minlength: "-Your name must have at least 2 letters "
-      },
-      email: {
-        required: "-Please, enter your email",
-        email: "-Your email address must be in the format of name@domain.com"
-      },
-      phone: {
-        required: "-Please, specify your phone number",
-      } 
-    }
-  });
+    });
+  })
 });

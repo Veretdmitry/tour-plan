@@ -379,14 +379,10 @@
             <h2 class="subscribe__text">subscribe to our</h2>
             <span class="subscribe__title">Newsletter</span>
           </div>
-          <form action="php/send.php" class="subscribe-search subscribe__search" method="POST">
-            <input 
-              type="email" 
-              class="subscribe-search__input" 
-              placeholder="Your email address"
-              name="email"
-              required
-            >
+          <form action="php/send.php" class="subscribe-search subscribe__search form" method="POST">
+            <div class="subscribe-search__input-block">
+              <input type="email" class="subscribe-search__input" placeholder="Your email address" name="email" required>
+            </div>
             <button class="subscribe-search__button">
               Send
             </button>
@@ -666,9 +662,15 @@
         </a>
         <h3 class="modal__title">Booking</h3>
         <form action="php/send.php" method="POST" class=" form modal__form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-          <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
-          <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+          <div class="modal__input-block">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>            
+          </div>
+          <div class="modal__input-block">
+            <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>            
+          </div>
+          <div class="modal__input-block">
+            <input type="email" class="input modal__input" placeholder="Email*" name="email" required>            
+          </div>
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <button class="modal__button" type="submit">Send</button>
           <span class="info">* Required Fields</span>
