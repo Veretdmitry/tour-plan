@@ -66,16 +66,29 @@ $(function () {
     location.href = 'index.html';
   });
   
-  $("#myform").validate({
+  $(".form").validate({
     rules: {
-      contact: {
+      name: {
         required: true,
-        email: {
-          depends: function (element) {
-            return $("#contactform_email").is(":checked");
-          }
-        }
+        minlength: 2
+      },
+      email: {
+        required: true,
+        email: true
       }
+  },
+    messages: {
+      name: {
+        required: "-Please, specify your name",
+        minlength: "-Your name must have at least 2 letters "
+      },
+      email: {
+        required: "-Please, enter your email",
+        email: "-Your email address must be in the format of name@domain.com"
+      },
+      phone: {
+        required: "-Please, specify your phone number",
+      } 
     }
   });
 });

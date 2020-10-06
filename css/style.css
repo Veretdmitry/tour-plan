@@ -23,6 +23,10 @@ iframe {
   border: none;
 }
 
+.error {
+  color: #EC1F46;
+}
+
 .input {
   font-style: normal;
   font-weight: normal;
@@ -1373,7 +1377,7 @@ template {
   grid-template-columns: 1.5fr 1.5fr 1.765fr 1fr;
   grid-auto-rows: minmax(34px, min-content);
   row-gap: 24px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .footer__logo {
@@ -1477,12 +1481,16 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-block {
   flex-basis: 47%;
   margin-bottom: 15px;
 }
 
 .footer__message {
-  max-width: 539px;
+  width: 100%;
   min-height: 123px;
   flex-basis: 100%;
   margin-bottom: 24px;
@@ -1503,7 +1511,6 @@ template {
 }
 
 .footer-bottom {
-  margin-top: 95px;
   position: relative;
 }
 
@@ -1599,13 +1606,12 @@ template {
   line-height: 23px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
   text-align: center;
 }
 
 .modal__input {
   flex-basis: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   min-height: 50px;
 }
 
@@ -1613,6 +1619,7 @@ template {
   min-height: 123px;
   flex-basis: 100%;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__button {
@@ -1757,7 +1764,7 @@ template {
     grid-column: span 4;
     max-width: 539px;
   }
-  .footer__input {
+  .footer__input-block {
     flex-basis: 47.5%;
   }
   .footer-list--categories {
@@ -2152,7 +2159,7 @@ template {
     grid-row: 7;
     grid-column: 1;
   }
-  .footer__input {
+  .footer__input-block {
     flex-basis: 100%;
   }
   .footer__button {
