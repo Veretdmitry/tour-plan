@@ -981,6 +981,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .packages__button:focus {

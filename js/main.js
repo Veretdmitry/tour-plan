@@ -39,7 +39,7 @@ $(function () {
     document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom-visible');
   });
 
-  var modalButton = $(".booking__button");
+  var modalButton = $(".booking__button, .packages__button");
   var closeButton = $(".modal__close");
 
   modalButton.on('click', modalopen);
@@ -98,4 +98,5 @@ $(function () {
     });
   });
   $('.phone').mask('+7(000) 000-00-00');
+  AOS.init();
 });
