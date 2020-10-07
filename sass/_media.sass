@@ -33,6 +33,10 @@
   .navbar
     &-menu
       padding: 22px 13px 23px 13px
+      &__item
+        &:hover
+          &::after
+            width: 0%
       &__link
         font-size: 12px
         line-height: 15px
@@ -47,12 +51,19 @@
       flex-direction: row
   .booking
     width: 340px
+    &__button
+      &:hover
+        background-color: $primary
   .map
     width: 340px
   .subscribe
     padding: 92px 0 93px 0
     &-block
       max-width: inherit
+    &-search
+      &__button
+        &:hover
+          background-color: $primary
   .review
     &__title
       font-size: 30px
@@ -69,6 +80,9 @@
   .card
     width: 339px 
     height: 250px
+    &__button
+      &:hover
+        background-color: $primary
   .packages
     &__title
       margin-bottom: 40px
@@ -115,10 +129,27 @@
         padding-left: 10px
       &--legalinfo
         grid-column: span 1
+    &__button
+      &:hover
+        background-color: $primary
     &-bottom
       margin-top: 63px
       &__list
         justify-content: flex-start
+  .modal
+    &__button
+      &:hover
+        background-color: $primary
+  .packages
+    &__button
+      &:hover
+        background-color: $primary
+  .user
+    &:hover
+      .user__name
+        &:after 
+          width: 0%
+      
 @media (max-width: 768px)
   .container 
     max-width: 560px

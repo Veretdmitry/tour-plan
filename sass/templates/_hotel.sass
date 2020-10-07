@@ -102,11 +102,12 @@
         background-image: url(../img/hotel/hotel-slider/arrow-next.svg)
       &:focus
         outline: none
+
   &-booking
     display: flex
     flex-direction: column
     justify-content: space-between
-  
+ 
 .stars
   flex-basis: 100%
   display: flex
@@ -204,8 +205,11 @@
     padding: 13px 0
     margin-top: 17px
     cursor: pointer
+    transition: 0.2s
     &:focus
       outline: none
+    &:hover
+      background-color: darken($primary, 10%)
 
 .map
   width: 347px

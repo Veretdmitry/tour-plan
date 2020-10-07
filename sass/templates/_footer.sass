@@ -102,6 +102,15 @@
     background-color: $primary
     border-radius: 4px
     border: none
+    cursor: pointer
+    transition: 0.2s
+    &:focus
+      outline: none
+    &:hover
+      background-color: darken($primary, 10%)
+  &__tel
+    &-link
+      display: block
   &-bottom
     margin-top: 95px
     position: relative

@@ -53,8 +53,11 @@
     background-color: $primary
     padding: 7px 22px
     cursor: pointer
+    transition: 0.2s
     &:focus
       outline: none
+    &:hover
+      background-color: darken($primary, 10%)
   &::before
     content: ''
     position: absolute
