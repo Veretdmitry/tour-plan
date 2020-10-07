@@ -34,6 +34,8 @@
     &-menu
       padding: 22px 13px 23px 13px
       &__item
+        &:not(:last-child)
+          margin-right: 25px
         &:hover
           &::after
             width: 0%
@@ -51,6 +53,8 @@
       flex-direction: row
   .booking
     width: 340px
+    height: 210px
+    padding: 29px 22px 26px 23px
     &__button
       &:hover
         background-color: $primary
@@ -65,21 +69,30 @@
         &:hover
           background-color: $primary
   .review
+    padding-bottom: 60px
     &__title
       font-size: 30px
+      line-height: 38px
       margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
+        min-height: 300px
+      &__button
+        top: 185px
+        &--next
+          right: 0px
+        &--prev
+          left: 0
   .activities
-    padding-bottom: 70px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
   .card
     width: 339px 
-    height: 250px
+    height: 255px
     &__button
       &:hover
         background-color: $primary
@@ -97,9 +110,9 @@
     padding: 73px 0 33px 0
     &-wrapper
       grid-template-columns: 0.95fr 1.35fr 43px 1fr
-      grid-row-gap: 55px
+      grid-row-gap: 40px
     &__logo
-      width: 104px
+      width: 100px
       grid-row: 1/2
       grid-column: span 1
       margin-top: 0
@@ -108,11 +121,24 @@
         grid-row: 1/2
         grid-column: span 2
         align-self: center
+    &__title
+      &--mb
+        &-details
+          margin-bottom: 27px
+    &__item
+      &--mb-2
+        margin-left: 5px
+        margin-bottom: 16px
+        &:nth-child(2)
+          margin-bottom: 22px
+        &:last-child
+          margin-bottom: 20px
     &__contact
       &-details
         grid-row: 3/4
         max-width: 100%
         grid-column: span 3
+        margin-top: 20px
       &-form
         grid-row: 4/5
         grid-column: span 4
@@ -133,7 +159,7 @@
       &:hover
         background-color: $primary
     &-bottom
-      margin-top: 63px
+      margin-top: 56px
       &__list
         justify-content: flex-start
   .modal
@@ -160,9 +186,9 @@
     &--mobile
       &_fixed
         position: fixed
-        left: 0
         top: 0
         right: 0
+        left: 0
         z-index: 99
     &__search, &__user
       &--mobile
@@ -199,7 +225,7 @@
     &__input
       max-width: 245px
   .breadcrumbs, .thankyou-block
-    margin-top: 70px
+    margin-top: 78px
   .user
     &__name
       &--light
@@ -278,6 +304,7 @@
         padding-left: 20px
   .review
     padding: 40px 0 50px
+
     &-slider
       &__item
         padding: 0 30px 30px
@@ -371,6 +398,12 @@
       margin-bottom: 36px
   .card
     width: 100%
+    &:nth-child(2)
+      order: 2
+    &:nth-child(3)
+      order: 1
+    &:nth-child(4)
+      order: 3
   .review
     &__title
       max-width: 245px
@@ -427,6 +460,10 @@
       grid-row: 1
       grid-column: 1
     &__title
+      &-legal
+        margin-bottom: 18px
+      &-add
+        margin-bottom: 18px
       &--network
         margin-bottom: 0  
       &--mb-3
@@ -437,19 +474,19 @@
         grid-column: 1
     &-list
       &--addinfo
-        grid-row: 3
-        grid-column: 1
-      &--categories
         grid-row: 4
         grid-column: 1
-      &--legalinfo
+      &--categories
         grid-row: 5
+        grid-column: 1
+      &--legalinfo
+        grid-row: 3
         grid-column: 1
     &__contact
       &-details
         grid-row: 6
         grid-column: 1
-        padding-top: 10px
+        margin-top: 10  px
       &-form
         grid-row: 7
         grid-column: 1
@@ -527,6 +564,4 @@
   .packages
     &__button
       padding: 10px 20px
-  .footer
-    &__ul
-      max-width: 250px
+
