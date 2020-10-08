@@ -1,6 +1,25 @@
+@media (max-height: 500px)
+  .modal
+    &__dialog   
+      height: 400px
+      overflow-y: scroll
+      transform: translate(-50%,-45%)
+@media (max-height: 400px)  
+  .modal
+    &__dialog
+      height: 300px 
+@media (max-height: 320px)  
+  .modal
+    &__dialog
+      height: 250px     
 @media (max-width: 1200px)
   .container
     width: 960px
+  .navbar
+    &-menu
+      &__item
+        &:not(:last-child)
+          margin-right: 0
   .hotel
     &-slider
       width: 590px
@@ -213,6 +232,8 @@
       padding-top: 30px
       &__item
         margin-bottom: 20px 
+        &:not(:last-child)
+          margin-right: 0px
         &--mobile
           &_visible
             display: block
