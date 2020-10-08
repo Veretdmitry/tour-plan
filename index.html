@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/aos.css" media="screen and (min-width:992px)">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -31,18 +31,16 @@
       <div class="navbar-top ">
         <div class="container">
           <div class="navbar-top-wrapper">
-            <a href="#" class="logo" data-aos="fade-down" data-aos-duration="500">
+            <a href="index.html" class="logo">
               <img class="logo__image" src="img/header/horizontal-logo.svg" alt="logo: beast tour plan">
             </a>
-            <form action="#" class="search navbar__search navbar__search--mobile_hidden"
-            data-aos="fade-down" data-aos-duration="500">
+            <form action="#" class="search navbar__search navbar__search--mobile_hidden">
               <input type="text" class="search__input" placeholder="Search Location">
               <button class="search__button">
                 <img src="img/header/search.svg" alt="icon: search">
               </button>
             </form>
-            <a href="#" class="user navbar__user navbar__user--mobile_hidden" data-aos="fade-down"
-            data-aos-duration="500">
+            <a href="#" class="user navbar__user navbar__user--mobile_hidden">
               <img src="img/header/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
               <span class="user__name">Nathan</span>
             </a>
@@ -137,19 +135,19 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide1.jpg" alt="slide1">
+                <img class="hotel-slider__image lazyload" src="#" data-src="img/hotel/hotel-slider/slide1.jpg" alt="slide1">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide2.jpg" alt="slide2">
+                <img class="hotel-slider__image lazyload" src="#" data-src="img/hotel/hotel-slider/slide2.jpg" alt="slide2">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide3.jpg" alt="slide3">
+                <img class="hotel-slider__image lazyload" src="#" data-src="img/hotel/hotel-slider/slide3.jpg" alt="slide3">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide4.jpg" alt="slide4">
+                <img class="hotel-slider__image lazyload" src="#" data-src="img/hotel/hotel-slider/slide4.jpg" alt="slide4">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slider__image" src="img/hotel/hotel-slider/slide5.jpg" alt="slide5">
+                <img class="hotel-slider__image lazyload" src="#" data-src="img/hotel/hotel-slider/slide5.jpg" alt="slide5">
               </div>
             </div>
             <!-- If we need navigation buttons -->
@@ -190,16 +188,13 @@
               <button class="booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map" data-aos="fade-left" data-aos-delay="200">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51176.21876840095!2d28.68816067830524!3d36.71022278046071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c0797e1eb0fddd%3A0x38a7dd1e3068b988!2sHilton%20Dalaman%20Sarigerme%20Resort%20%26%20Spa!5e0!3m2!1sru!2sru!4v1601150994162!5m2!1sru!2sru"
-                style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+            <div class="map map-show-on-click " data-map-height="210" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51176.21876840095!2d28.68816067830524!3d36.71022278046071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c0797e1eb0fddd%3A0x38a7dd1e3068b988!2sHilton%20Dalaman%20Sarigerme%20Resort%20%26%20Spa!5e0!3m2!1sru!2sru!4v1601150994162!5m2!1sru!2sru" data-aos="fade-left" data-aos-delay="200">
+              <img src="#" data-src="img/map.jpg" alt="Map of your hotel" class="map__img lazyload">
+            </div>
             </div>
           </div>
           <!-- /.hotel-booking -->
         </div>
-      </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
@@ -209,7 +204,7 @@
         <div class="packages-wrapper">
             <div class="packages-big">
               <div class="packages-big__offer">flash offer</div>
-              <img src="img/packages/packages-1.jpg" alt="package:big" class="packages-big__image">
+              <img src="#" data-src="img/packages/packages-1.jpg" alt="package:big" class="packages-big__image lazyload">
               <div class="packages-info packages-big__info">
                 <div class="packages-hotel packages-big__hotel">
                   <div class="packages-stars packages__stars">
@@ -255,7 +250,7 @@
             <!-- /.packages-item -->
             <div class="packages-small">
               <div class="packages-small__offer">flash offer</div>
-              <img src="img/packages/packages-2.jpg" alt="packages:small1" class="packages-small__image">
+              <img src="#" data-src="img/packages/packages-2.jpg" alt="packages:small1" class="packages-small__image lazyload">
               <div class="packages-info packages-small__info">
                 <div class="packages-hotel packages-small__hotel">
                   <h3 class="packages-hotel__name">LUX* Belle Mare</h3>
@@ -289,7 +284,7 @@
             </div>
             <div class="packages-small">
               <div class="packages-small__offer">flash offer</div>
-              <img src="img/packages/packages-3.jpg" alt="packages:small2" class="packages-small__image">
+              <img src="#" data-src="img/packages/packages-3.jpg" alt="packages:small2" class="packages-small__image lazyload">
               <div class="packages-info packages-small__info">
                 <div class="packages-hotel packages-small__hotel">
                   <h3 class="packages-hotel__name">White Palace</h3>
@@ -323,7 +318,7 @@
             </div>
             <div class="packages-small">
               <div class="packages-small__offer">flash offer</div>
-              <img src="img/packages/packages-4.jpg" alt="packages:small3" class="packages-small__image">
+              <img src="#" data-src="img/packages/packages-4.jpg" alt="packages:small3" class="packages-small__image lazyload">
               <div class="packages-info packages-small__info">
                 <div class="packages-hotel packages-small__hotel">
                   <h3 class="packages-hotel__name">Luxury Place</h3>
@@ -357,7 +352,7 @@
             </div>
             <div class="packages-small">
               <div class="packages-small__offer">flash offer</div>
-              <img src="img/packages/packages-5.jpg" alt="packages:small4" class="packages-small__image">
+              <img src="#" data-src="img/packages/packages-5.jpg" alt="packages:small4" class="packages-small__image lazyload">
               <div class="packages-info packages-small__info">
                 <div class="packages-hotel packages-small__hotel">
                   <h3 class="packages-hotel__name">Hotel Five Star</h3>
@@ -509,29 +504,29 @@
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
           <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
-            <img src="img/activities/activities-1.jpg" alt="The curious corner
-            of chamarel" class="card__image">
+            <img src="#" data-src="img/activities/activities-1.jpg" alt="The curious corner
+            of chamarel" class="card__image lazyload">
             <h3 class="card__title">The curious corner<br>
             of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div class="card activities__card" data-aos="fade-right" data-aos-delay="200">
-            <img src="img/activities/activities-2.jpg" alt="Gymkhana club golf
-              course" class="card__image">
+            <img src="#" data-src="img/activities/activities-2.jpg" alt="Gymkhana club golf
+              course" class="card__image lazyload">
             <h3 class="card__title">Gymkhana club golf<br>
             course</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
-            <img src="img/activities/activities-3.jpg" alt="Tamarind falls hiking
-            trip - full day" class="card__image">
+            <img src="#" data-src="img/activities/activities-3.jpg" alt="Tamarind falls hiking
+            trip - full day" class="card__image lazyload">
             <h3 class="card__title">Tamarind falls hiking<br>
             trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div class="card activities__card" data-aos="fade-right" data-aos-delay="400">
-            <img src="img/activities/activities-4.jpg" alt="he blue marine discovery
-            quest" class="card__image">
+            <img src="#" data-src="img/activities/activities-4.jpg" alt="he blue marine discovery
+            quest" class="card__image lazyload">
             <h3 class="card__title">The blue marine discovery<br>
             quest</h3>
             <button class="card__button">Book Now</button>
@@ -543,7 +538,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo">
+          <a href="index.html" class="footer__logo">
             <img 
               src="img/footer/vertical-logo.svg" 
               alt="logo: vertical-logo" 
@@ -682,7 +677,7 @@
             <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Conditions of use</a></li>
             <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Cancellation policy</a></li>
           </ul>
-          <img src="img/footer/services.svg" alt="image:services" class="footer-bottom__services">
+          <img src="img/footer/services.png" alt="image:services" class="footer-bottom__services">
         </div>
       </div>
     </footer>
@@ -713,8 +708,9 @@
     </div>
     <!-- /.modal -->
     
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/lazysizes.min.js" async></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>

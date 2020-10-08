@@ -33,6 +33,17 @@
       font-size: 14px
       line-height: 22px
       margin: 0
+      max-height: 180px
+      overflow-y: scroll
+      &::-webkit-scrollbar 
+        width: 6px
+      &::-webkit-scrollbar-track 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) 
+        border-radius: 10px 
+      &::-webkit-scrollbar-thumb 
+        border-radius: 10px
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+
   &-room
     display: flex
     flex-direction: column
