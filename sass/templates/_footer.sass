@@ -44,12 +44,17 @@
     &__icon
       width: 21px
       height: 21px
+      fill: $footer-text-color
+      &:hover
+        fill: $primary
   &__icon
      &-wrapper
        min-width: 40px
   &__link
     text-decoration: none
     color: inherit
+    &:hover
+      color: $light
   &-list
     &--categories
       grid-row: 1 / 4  
@@ -134,6 +139,8 @@
       line-height: 15px
       text-decoration: none
       color: $footer-text-color
+      &:hover
+        text-decoration: underline
     &__services
       position: absolute
       top: 0

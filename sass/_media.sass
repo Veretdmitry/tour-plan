@@ -144,6 +144,10 @@
       grid-row: 1/2
       grid-column: span 1
       margin-top: 0
+    &-network
+      &__icon
+        &:hover
+          fill: $footer-text-color
     &__social
       &-network
         grid-row: 1/2
@@ -186,6 +190,9 @@
     &__button
       &:hover
         background-color: $primary
+    &__link
+      &:hover
+        color: $footer-text-color
     &-bottom
       margin-top: 56px
       &__list
@@ -203,7 +210,10 @@
       .user__name
         &:after 
           width: 0%
-      
+  .come-back
+    &:hover
+      background-color: $primary
+  
 @media (max-width: 767px)
   .container 
     max-width: 560px
