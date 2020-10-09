@@ -1,14 +1,19 @@
-@media (max-height: 500px)
+@media (max-height: 560px)
   .modal
     &__dialog   
       height: 400px
       overflow-y: scroll
       transform: translate(-50%,-45%)
-@media (max-height: 400px)  
+  .navbar
+    &-bottom
+      overflow-y: scroll
+    &-menu
+      height: 491px  
+@media (max-height: 450px)  
   .modal
     &__dialog
       height: 300px 
-@media (max-height: 320px)  
+@media (max-height: 340px)  
   .modal
     &__dialog
       height: 250px     
@@ -82,6 +87,7 @@
         background-color: $primary
   .map
     width: 340px
+    height: 210px
   .subscribe
     padding: 92px 0 93px 0
     &-block
@@ -198,7 +204,7 @@
         &:after 
           width: 0%
       
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container 
     max-width: 560px
   .navbar
@@ -227,7 +233,7 @@
       left: 0
       bottom: 0
       right: 0
-      top: 70px
+      top: 74px
       &-visible
         display: block
     &-menu
@@ -296,9 +302,9 @@
       padding-top: 18px
     &-booking
       flex-direction: column
-      min-height: 450px
   .booking
     width: 100%
+    margin-bottom: 20px
   .map
     width: 100%
   .stars
@@ -328,8 +334,9 @@
         padding-left: 20px
   .review
     padding: 40px 0 50px
-
     &-slider
+      &__text
+        text-align: left
       &__item
         padding: 0 30px 30px
         &::before
@@ -541,8 +548,9 @@
         margin: 0 0 10px 0
       &__services
         position: static
-      &__link
-        font-size: 10px
+      &__item
+        &:not(:last-child)
+          margin-right: 5px
     &__icon
       &-wrapper
         min-width: 30px
@@ -578,12 +586,14 @@
   .hotel
     &-slider
       height: 180px
+    &__slider
+      margin-bottom: 20px
   .booking
     width: 100%
     min-height: 210px
   .map
     width: 100%
-    min-height: 172px
+    height: 173px
   .stars
     margin-right: 16px
   .packages
