@@ -1,74 +1,95 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Tour Plan - Hotel Booking</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="navbar navbar--mobile_fixed">
-      <div class="navbar-top">
-        <div class="container">
-          <div class="navbar-top-wrapper">
-            <a href="index.html" class="logo">
-              <img class="logo__image" src="img/header/horizontal-logo.svg" alt="logo: beast tour plan">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Tour Plan - Hotel Booking</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="navbar navbar--mobile_fixed">
+    <div class="navbar-top ">
+      <div class="container">
+        <div class="navbar-top-wrapper">
+          <a href="index.html" class="logo">
+            <img class="logo__image" src="img/header/horizontal-logo.svg" alt="logo: beast tour plan">
+          </a>
+          <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+            <input type="text" class="search__input" placeholder="Search Location">
+            <button class="search__button">
+              <img src="img/header/search.svg" alt="icon: search">
+            </button>
+          </form>
+          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+            <img src="img/header/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+            <span class="user__name">Nathan</span>
+          </a>
+          <!-- /.user -->
+          <button class=" menu-button navbar-top__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <!-- /.navbar-top-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar-top -->
+    <div class="navbar-bottom">
+      <div class="container">
+        <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <a href="#" class="user navbar__user navbar__user--mobile_visible">
+              <img src="img/header/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
             </a>
-            <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
               <input type="text" class="search__input" placeholder="Search Location">
               <button class="search__button">
                 <img src="img/header/search.svg" alt="icon: search">
               </button>
             </form>
-            <a href="#" class="user navbar__user navbar__user--mobile_hidden">
-              <img src="img/header/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
-              <span class="user__name">Nathan</span>
-            </a>
-            <!-- /.user -->
-            <button class=" menu-button navbar-top__menu-button">
-              <span class="menu-button__line"></span>
-              <span class="menu-button__line"></span>
-              <span class="menu-button__line"></span>
-            </button>
-          </div>
-          <!-- /.navbar-top-wrapper -->
-        </div>
-        <!-- /.container -->
+          </li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
+        </ul>
+        <!-- /.navbar-menu -->
       </div>
-      <!-- /.navbar-top -->
-      <div class="navbar-bottom">
-        <div class="container">
-          <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
-              <a href="#" class="user navbar__user navbar__user--mobile_visible">
-                <img src="img/header/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
-                <span class="user__name user__name--light">Nathan</span>
-              </a>
-            </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
-              <form action="#" class="search navbar__search navbar__search--mobile_visible">
-                <input type="text" class="search__input" placeholder="Search Location">
-                <button class="search__button">
-                  <img src="img/header/search.svg" alt="icon: search">
-                </button>
-              </form>
-            </li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
-          </ul>
-          <!-- /.navbar-menu -->
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- /.navbar-bottom -->
-    </header>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar-bottom -->
+  </header>
+  <!-- /.header -->
     <br>
     <br>
     <div class="container">
@@ -219,9 +240,12 @@
         </div>
       </div>
     </footer>
-    
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+      var n = $(".come-back"); 
+      n.on("click", function () { location.href = "index.html" });
+      var o = document.querySelector(".menu-button"); 
+      o.addEventListener("click", function () { document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom-visible") });
+    </script>
   </body>
   </html>
